@@ -1,0 +1,487 @@
+:root{
+    --very-light-pink: #8d8b8b;
+    --white: #FFFFFF;
+    --text-input-field:#F7F7F7;
+    --black: #000000;
+    --hospital-green: #ACD9B2;
+    --dark: #232830;
+    
+    /*Fuentes a utilizar: */
+    font-size: 62.5%;
+    --primary-font: 'Quicksand', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-width: 320px;
+    font-family: var(--primary-font);
+}
+
+.new-account__navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    background-color: var(--white);
+    box-shadow: 1px 4px 5px -2px rgba(0,0,0,0.06);
+}
+
+.new-account__navbar span{
+    display: inline-block;
+    margin-top: 2px;
+    height: 25px;
+}
+
+.navbar__menu-icon{
+    width: 20px;
+    margin-left: 5px;
+    background: url(/assets/icons/icon_menu.svg) center/contain no-repeat;
+} 
+
+.navbar__logo{
+    width: 90px;
+}
+
+.navbar__shopping-cart{
+    width: 25px;
+    margin-right: 5px;
+    background: url(/assets/icons/icon_shopping_cart_notification.svg) center/contain no-repeat;
+}
+
+.newpass__header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+}
+
+.header--logo{
+    width: 150px;
+    margin: 0px auto;
+}
+
+.header__my-account{
+    width: 70%;
+    min-width: 288px;
+    max-width: 400px;
+    margin: 30px auto;
+    font-size: 0.7rem;
+}
+
+.desktop-header{
+    display: none;
+}
+
+.main--newpass-container{
+    width: 100%;
+    min-width: 288px;
+    height: 65vh;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.main__newpass-container{
+    width: 70%;
+    min-width: 288px;
+    max-width: 400px;
+}
+
+.main__newpass-container h1{
+    font-size: 1.6rem;
+}
+
+.main__newpass-container p{
+    margin: 4px;
+    font-size: 1.5rem;
+    color: var(--very-light-pink)
+}
+
+.newpass__form{
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+}
+
+.newpass__form label{
+    margin-bottom: 4px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: start;
+}
+
+.newpass__form .form__input{
+    height: 35px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--text-input-field);
+}
+
+form > .user__p{
+    margin: 8px 0px 32px;
+    text-align: start;
+    color: #bbb4b4
+}
+
+#submit{
+    position: absolute;
+    margin: 0px auto;
+    bottom: calc(0% + 15px);
+}
+
+.generic-button{
+    align-self: center;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+    width: 100%;
+    max-width: 300px;
+    height: 45px
+}
+
+.sign-up--button{
+    margin: 80px auto;
+    border: 1px solid var(--hospital-green);
+    background-color: var(--white);
+    padding: 12px; 
+}
+
+.sign-up--button a{
+    color: var(--hospital-green);
+    text-decoration: none;
+}
+
+.edit-button{
+    color: var(--hospital-green);
+}
+
+
+.login--button{ 
+    border: none;
+    color: var(--white);
+    background-color: var(--hospital-green);
+}
+
+.main__newpass-container .email-sent{
+    margin: 25px auto;
+    padding: 15px;
+    width: 115px;
+    height: 115px;
+    background: url(/assets/icons/email.svg);
+    background-color: rgb(250, 243, 243);
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: center;
+    border-radius: 60px;
+}
+
+.main__newpass-container .trouble{
+    margin-top: 16px;
+    font-size: 1.2rem;
+}
+
+.trouble a{
+    text-decoration: none;
+    color: var(--hospital-green);
+}
+
+.login-form{
+    margin: 0px auto 20px;
+}
+
+input::placeholder{
+    font-family: var(--primary-font);
+    color: #bbb4b4;
+}
+
+/* These styles corresponds to main-page.html: */
+
+.body__search-input{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.body__search-input--bar{
+    border-radius: 5px;
+    width: 90%;
+    max-width: 500px;
+    height: 80%;
+    border: none;
+    background-color: rgb(243, 243, 243);
+    padding-left: 15px;
+    color: var(--very-light-pink);
+}
+
+.body__nav--categories{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.body__nav--categories ul{
+    display: flex;
+    height: 40px;
+    margin: 10px auto;
+    padding: 0px;
+    font-size: 1.4rem;
+    list-style: none;
+    overflow-x: scroll;
+}
+
+.body__nav--categories ul::-webkit-scrollbar{
+    display: none;
+}
+
+.body__nav--categories ul>li{
+    margin: 8px;
+    vertical-align: middle;
+    color: var(--very-light-pink);
+}
+
+#nav__categories--active-cat {
+    height: 30px;
+    margin-top: 2px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+    text-align: center;
+}
+
+.body__nav--sort-by{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.body__nav--sort-by label{
+    font-size: 1.2rem;
+}
+
+.body__nav--sort-by select{
+    margin-left: 4px;
+    font-family: var(--primary-font);
+    color: var(--very-light-pink);
+    border: none;
+    background-color: #fff;
+}
+
+.main__cards-container{
+    width: 100%;
+    min-width: 320px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.main__cards-container--card{
+    width: 135px;
+    height: 170px;
+    
+}
+
+.main__cards-container--card img{
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.main__cards-container--card div{
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-around;
+}
+
+.main__cards-container--card div > p {
+    width: 55%;
+    font-size: 1.2rem;
+}
+
+.card--product-name{
+    font-size: 1.1rem;
+    color: #646464;
+}
+
+.main__cards-container--card div > span{
+    width: 30px;
+    height: 30px;
+    background: url(/assets/icons/bt_add_to_cart.svg) center/contain no-repeat;
+}
+
+.third, .fourth, .fifth{
+    display: none;
+}
+
+@media (min-width: 400px) {
+    .main__cards-container{
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 600px) {
+    .third{
+        display: inline-block;
+    }
+}
+
+@media(min-width: 900px){
+
+    .new-account__navbar,
+    .body__search-input, 
+    .body__nav {
+        display: none;
+    }
+
+    .desktop-header{
+        display: flex;
+        width: 100%;
+        height: 50px;
+        padding: 5px 50px;
+    }
+
+    .header-first-part{
+        display: flex;
+        width: auto;
+    }
+
+    .navbar__logo{
+        width: 120px;
+    }
+
+    .body__nav--categories{
+        width: auto;
+    }
+
+    .body__nav--categories ul{
+        margin: 0px 20px;
+    }
+
+    .header__account{
+        display: flex;
+        font-size: 1rem;
+        color: #8d8b8b;
+    }
+
+    .header__account span{
+        padding: 10px;
+        height: 80%;
+    }
+
+    .main__cards-container{
+        padding-left: 50px;
+        padding-right: 50px;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 900px) {
+    .fourth{
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1000px) {
+    main{
+        margin-top: 20px;
+    }
+
+    .fifth{
+        display: inline-block;
+    }
+}
+
+
+
+/* Next code corresponds to aside.html */
+
+
+
+aside{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    height: 100vh;
+    min-width: 288px;
+    margin: 0px auto;
+    padding: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+aside > span {
+    position: absolute;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    left: 90%;
+    background: url(/assets/icons/icon_close.png) center/cover no-repeat;
+}
+
+aside > ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.aside__categories{
+    width: 100%;
+    min-width: 320px;
+    margin-top: 40px;
+}
+
+.aside__categories--title {
+    margin-bottom: 40px !important;
+}
+
+.aside__categories li, .aside__my-things li{
+    margin-bottom: 20px;
+}
+
+aside hr{
+    margin: 0px auto;
+    width: 95%;
+    border: 0.3px solid #f0ecec;
+}
+
+.aside__my-things{
+    margin-top: 20px;
+}
+
+.aside__my-things li>a{
+    text-decoration: none;
+    color: black;
+}
+
+.aside__my-account{
+    position: relative;
+    bottom: 0px;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.aside__my-account .email{
+    color: var(--very-light-pink);
+    margin-bottom: 5px;
+}
+
+.aside__my-account .sign-out{
+    color: var(--hospital-green);
+}

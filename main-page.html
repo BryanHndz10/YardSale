@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Yard Sale</title>
+</head>
+<body>
+
+    <header class="desktop-header new-account__navbar">
+        <div class="header-first-part">
+            <img class="navbar__logo" src="./assets/logos/logo_yard_sale.svg" alt="YardSale-logo">
+        
+            <div class="body__nav--categories">
+                <ul>
+                    <li id="nav__categories--active-cat">All</li>
+                    <li>Clothes</li>
+                    <li>Electronics</li>
+                    <li>Furniture</li>
+                    <li>Toys</li>
+                    <li>Sports</li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <div class="header__account">
+            <span>bryanfb95@gmail.com </span>
+            <span class="navbar__shopping-cart"></span>
+        </div>
+    </header>
+
+    <header class="new-account__navbar">
+        <span class="navbar__menu-icon"></span>
+        <img class="navbar__logo" src="./assets/logos/logo_yard_sale.svg" alt="YardSale-logo">
+        <span class="navbar__shopping-cart"></span>
+    </header>
+
+    <div class="body__search-input">
+        <input class="body__search-input--bar" placeholder="&#128269   Search product" type="text">
+    </div>
+
+    <nav class="body__nav">
+        <div class="body__nav--categories">
+            <ul>
+                <li id="nav__categories--active-cat">All</li>
+                <li>Clothes</li>
+                <li>Electronics</li>
+                <li>Furniture</li>
+                <li>Toys</li>
+                <li>Sports</li>
+            </ul>
+        </div>
+        <div class="body__nav--sort-by">
+            
+            <label for="sort-by"><strong>Order:</strong></label>
+            
+            <select name="sort-by" id="">
+                <option value="MR">Most recent</option>
+                <option value="BS">Best sellers</option>
+                <option value="CP">Cheapest</option>
+                <option value="PP">Popular</option>
+            </select>
+        </div>
+    </nav>
+
+    <main>
+        <section class="main__cards-container">
+            <article class="main__cards-container--card">
+                <img src="./assets/products/s8_phone.jpg" alt="Imagen del producto">
+                <div>
+                    <p>
+                        <strong class="card--price">$ 120.00</strong>
+                        <span class="card--product-name">Samsung S8+</span>
+                    </p>
+
+                    <span></span>
+                </div>
+            </article>
+
+            <article class="main__cards-container--card">
+                <img src="./assets/products/iphone_8-plus.jpg" alt="Imagen del producto">
+                <div>
+                    <p>
+                        <strong class="card--price">$ 200.00</strong>
+                        <span class="card--product-name">Iphone 8+</span>
+                    </p>
+
+                    <span></span>
+                </div>
+            </article>
+
+            <article class="main__cards-container--card third">
+                <img src="./assets/products/iphone_8-plus.jpg" alt="Imagen del producto">
+                <div>
+                    <p>
+                        <strong class="card--price">$ 200.00</strong>
+                        <span class="card--product-name">Iphone 8+</span>
+                    </p>
+
+                    <span></span>
+                </div>
+            </article>
+            <article class="main__cards-container--card fourth">
+                <img src="./assets/products/iphone_8-plus.jpg" alt="Imagen del producto">
+                <div>
+                    <p>
+                        <strong class="card--price">$ 200.00</strong>
+                        <span class="card--product-name">Iphone 8+</span>
+                    </p>
+
+                    <span></span>
+                </div>
+            </article>
+            <article class="main__cards-container--card fifth">
+                <img src="./assets/products/iphone_8-plus.jpg" alt="Imagen del producto">
+                <div>
+                    <p>
+                        <strong class="card--price">$ 200.00</strong>
+                        <span class="card--product-name">Iphone 8+</span>
+                    </p>
+
+                    <span></span>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="main__cards-container">
+            <article class="main__cards-container--card">
+                <img src="./assets/products/puma.jpg" alt="Imagen del producto">
+                <div>
+                    <p>
+                        <strong class="card--price">$ 70.00</strong>
+                        <span class="card--product-name">Puma Fit+</span>
+                    </p>
+
+                    <span></span>
+                </div>
+            </article>
+
+            <article class="main__cards-container--card">
+                <img src="./assets/products/squier.jpg" alt="Imagen del producto">
+                <div>
+                    <p>
+                        <strong class="card--price">$ 200.00</strong>
+                        <span class="card--product-name">Fender SA-150C </span>
+                    </p>
+
+                    <span></span>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="main__cards-container">
+            <article class="main__cards-container--card">
+                <img src="./assets/products/macbook.jpg" alt="Imagen del producto">
+                <div>
+                    <p>
+                        <strong class="card--price">$ 900.00 </strong>
+                        <br>
+                        <span class="card--product-name">Macbook Pro 2021</span>
+                    </p>
+
+                    <span></span>
+                </div>
+            </article>
+
+            <article class="main__cards-container--card">
+                <img src="./assets/products/ball.jpeg" alt="Imagen del producto">
+                <div>
+                    <p>
+                        <strong class="card--price">$ 40.00</strong>
+                        <span class="card--product-name">Adidas Speedcell Ball </span>
+                    </p>
+
+                    <span></span>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+</body>
+</html>
